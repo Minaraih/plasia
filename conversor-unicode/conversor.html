@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="description" content="Sute de conteúdos diversos" />
+	<title>Coversor Unicode</title>
+
+	<script src="conversor.js"></script>
+	<link rel="stylesheet" href="conversor.css" />
+	<link rel="stylesheet" href="../css/estilo.css" />
+	<script defer="true" src="../javascript/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container-geral">
+
+		<!-- cabecalho -->
+		<header id="cabecalho">
+			<div id="logo">
+				<a href="../index.html"><img src="../imagens/logo.png" alt="logo PlasiaBlog" /></a>
+			</div>
+
+			<span class="open-menu">&#8801;</span>
+		</header>
+
+		<!-- Menu -->
+		<nav class="menu">
+			<ul>
+				<li><a href="../index.html">Página Inicial</a></li>
+			</ul>
+		</nav>
+
+		<div class="box-entrada">
+			<h2>Conversor Unicode</h2>
+			<div>
+				<input type="text" name="txtUnicode" id="txtUnicode" placeholder="Digite o texto" />
+
+				<input type="button" name="btnEnviar" id="btnEnviar" value="Enviar" onclick="conversao()" />
+
+				<label for="selTipo">Para: </label>
+				<select name="selTipo" id="selTipo">
+					<option value="Unicode" selected>Unicode</option>
+					<option value="Texto">Texto</option>
+				</select>
+			</div>
+
+			<div id="resConver">
+
+			</div>
+		</div>
+
+		<div>
+			<section class="info">
+				<article>
+					<h3>Para o que serve?</h3>
+					<p>
+						O <em>conversor unicode</em> serve para transferir a escrita latina para números unicode ou de unicode para letras latinas.
+					</p>
+				</article>
+
+				<article>
+					<h3>Como usar?</h3>
+					<p>
+						Digite as letras no campo de digitação depois clique em <em>enviar</em>, e não se esqueça de selecionar a opção unicode, para converter de letras para unicode. Também é possível transferir de Unicode para letras, apenas altere a seleção para <em><u>Texto</u>.</em>
+					</p>
+				</article>
+			</section>
+		</div>
+
+		<footer class="rodape">
+			<span class="ir-topo">
+				&#65087;
+			</span>
+			<ul>
+				<li><a href="https://discord.com/" target="_blank"><img src="../imagens/logo-discord.png" alt="Discord" /></a></li>
+				<li><a href="https://youtu.be/" target="_blank"><img src="../imagens/logo-youtube.png" alt="YouTube" /></a></li>
+				<li><a href="#">Sobre</a></li>
+			</ul>
+		</footer>
+	</div>
+</body>
+</html>
